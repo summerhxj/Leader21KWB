@@ -94,16 +94,16 @@
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    [self initMainGrid];
     [self initConfirmButton];
     [self initRuleDescriptionButton];
+    [self initMainGrid];
     //获取用户当前订阅的套餐
     [self requestUserBookset];
 }
 
 - (void)initMainGrid
 {
-    _gridView = [[HBGridView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenWidth)];
+    _gridView = [[HBGridView alloc] initWithFrame:CGRectMake(0, KHBNaviBarHeight, ScreenWidth, CGRectGetMinY(self.ruleDescriptionButton.frame)-KHBNaviBarHeight-10)];
     _gridView.delegate = self;
     [_gridView setScrollEnabled:NO];
     [self.view addSubview:_gridView];

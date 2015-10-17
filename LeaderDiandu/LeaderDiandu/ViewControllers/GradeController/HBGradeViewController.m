@@ -485,7 +485,7 @@
     [self.view addSubview:self.leftButton];
     
     self.redPointImgView = [[UIImageView alloc] initWithFrame:CGRectMake(44 - 15, 5, 15, 15)];
-    self.redPointImgView.image = [UIImage imageNamed:@"test-btn-right-selected"];
+    self.redPointImgView.image = [UIImage imageNamed:@"msg_tips_new"];
     self.redPointImgView.hidden = YES;
     [self.leftButton addSubview:self.redPointImgView];
     

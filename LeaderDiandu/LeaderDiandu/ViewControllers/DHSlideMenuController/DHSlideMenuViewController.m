@@ -246,7 +246,7 @@ static NSString * const kSlideMenuViewControllerCellReuseId = @"kSlideMenuViewCo
     
     if ([viewCtlName isEqualToString:@"HBMessageViewController"]) { //消息中心
         if (!self.msgRedPointView) {
-            self.msgRedPointView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"test-btn-right-selected"]];
+            self.msgRedPointView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"msg_tips_new"]];
             self.msgRedPointView.frame = CGRectMake(150, (60 - 15)/2, 15, 15);
             [cell addSubview:self.msgRedPointView];
         }
@@ -260,7 +260,7 @@ static NSString * const kSlideMenuViewControllerCellReuseId = @"kSlideMenuViewCo
     
     if ([viewCtlName isEqualToString:@"HBTestWorkViewController"]) { //我的作业
         if (!self.examRedPointView) {
-            self.examRedPointView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"test-btn-right-selected"]];
+            self.examRedPointView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"msg_tips_new"]];
             self.examRedPointView.frame = CGRectMake(150, (60 - 15)/2, 15, 15);
             [cell addSubview:self.examRedPointView];
         }
